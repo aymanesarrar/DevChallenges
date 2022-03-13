@@ -98,6 +98,27 @@
 	.main-infos__button {
 		margin: 0;
 	}
+	.footer-section {
+		padding: 2rem;
+	}
   }
 
-@media only screen and (max-width: )
+@media only screen and (max-width: 1024px)
+{
+	.main-img__scarecrow {
+		height: 300px;
+	}
+	.main-section {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.main-infos__description,
+	.main-infos__title {
+		width: 100%;
+	}
+	.main-infos {
+		width: 100%;
+	}
+}
+
