@@ -120,5 +120,11 @@
 	.main-infos {
 		width: 100%;
 	}
+	.main-infos__button {
+		margin: 0;
+	}
+	.footer-section {
+		padding: 2rem;
+	}
 }
 
