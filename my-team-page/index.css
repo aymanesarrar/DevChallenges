@@ -13,7 +13,6 @@ body {
 }
 
 .header {
-	height: 10vh;
 	display: flex;
 	width: 100%;
 	padding: 4rem;
@@ -56,10 +55,26 @@ body {
 	text-orientation: mixed;
 	writing-mode: vertical-rl;
 	text-transform: uppercase;
+	letter-spacing:1px;
+	margin-left: 1rem;
 }
 .member__content-name {
 	font-family: 'Poppins', sans-serif;
 }
 .wrapper {
-	display: grid;
+	display: grid; 
+	grid-template-columns: 1fr 1fr 1fr; 
+	grid-template-rows: 1fr 1fr 1fr; 
+	gap: 2rem 2rem; 
+	grid-template-areas: 
+	  ". . ."
+	  ". . ."
+	  ". . .";
+}
+.member__content {
+	height: 100%;
+	margin: 0 auto;
+}
+.member__content-img {
+	height: 471px;
 }
