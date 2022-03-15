@@ -91,12 +91,6 @@ body {
 	text-decoration: underline;
 }
 
-/* .item__left {
-	margin-left: 20rem;
-} */
-/* .item__right {
-	margin-right: 80rem;
-} */
 
 @media only screen and (max-width: 600px) {
 	.wrapper {
