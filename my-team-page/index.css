@@ -39,7 +39,7 @@ body {
 .member__content {
 	display: flex;
 	flex-direction: column;
-	margin: 0 auto;
+	/* margin: 0 auto; */
 }
 .profession {
 	display: flex;
@@ -55,27 +55,28 @@ body {
 	font-family: 'Poppins', sans-serif;
 }
 .wrapper {
-	height: 90vh;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr); 
-	grid-template-rows: repeat(3, 1fr); 
-	gap: 2rem 2rem; 
+	grid-template-rows: repeat(2, 1fr); 
+	row-gap: 2rem;
+	column-gap: unset;
 	grid-template-areas: 
 	  ". . ."
-	  ". . ."
 	  ". . .";
+	  justify-items: center;
 }
 .member__content-img {
 	height: 471px;
 }
-.item__right{
-	padding-right: 40rem;
+.item__left {
+	justify-self: right;
 }
-.item__left{
-	padding-left: 40rem;
+.item__right {
+	justify-self: left;
 }
 .center {
-	padding-top: 5rem;
+	padding-top: 10rem;
+	align-items: center;
 }
 .footer {
 	height: 10vh;
@@ -93,16 +94,65 @@ body {
 
 
 @media only screen and (max-width: 600px) {
+	.header__description {
+		padding-top: 1rem;
+	}
+	.header__description-text {
+		font-size: 14px;
+		width: 100%;
+	}
+	.header__description-title {
+		font-size: 18px;
+	}
+	.header {
+		flex-direction: column;
+		align-items: flex-start;
+		width: 100%;
+		padding: 2rem;
+	}
+	.header__title {
+		font-size: 32px;
+	}
 	.wrapper {
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr;
-		gap: 2rem;
-		grid-template-areas:
-		". ."
-		". ."
+		display: grid;
+		grid-template-columns: repeat(2, 1fr); 
+		grid-template-rows: repeat(3, 1fr); 
+		column-gap: 1rem;
+		grid-template-areas: 
+	  	". ."
+	  	". ."
 		". .";
 	}
 	.item__left{
 		padding-left: 0;
+	}
+	.member__content-img {
+		height: 138px;
+	}
+	.member__content-profession {
+		font-size: 10px;
+		margin-left: 0.2rem;
+	}
+	.member__content-name {
+		font-size: 14px;
+	}
+	.center {
+		padding-top: 0;
+	}
+	.item__left {
+		justify-self: center;
+	}
+	.item__right {
+		justify-self: center;
+	}
+	.footer {
+		font-size: 14px;
+	}
+	.member__content:nth-child(even) {
+		justify-self: left;
+		padding-top: 2rem;
+	}
+	.member__content:nth-child(odd) {
+		justify-self: right;
 	}
 }
