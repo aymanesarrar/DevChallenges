@@ -53,14 +53,13 @@ font-family: 'Montserrat', sans-serif;
 	background-image: url('assets/photo1.png');
 	background-size: cover;
 	background-repeat: no-repeat;
+	position: relative;
+	width: 50%;
 }
 .main {
 	display: flex;
-	/* height: 80vh; */
-}
-.main__img {
-	width: 50%;
-	display: relative;
+	height: 80vh;
+	padding: 4rem;
 }
 .main__infos {
 	width: 50%;
@@ -81,7 +80,7 @@ font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
 	font-size: 24px;
 	font-family: 'Montserrat', sans-serif;
-	width: 75%;
+	width: 50%;
 	margin-top: 2rem;
 }
 .main__infos-more {
@@ -100,8 +99,47 @@ font-family: 'Montserrat', sans-serif;
 .flex-this {
 	display: flex;
 	flex-direction: column;
+	margin-left: 1rem;
+	padding-top: 1rem;
 }
 .main__img-card {
 	position: absolute;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	background-color: #181719;
+	padding: 2rem;
+	width: 50%;
+	bottom: -100px;
+	right: 50px;
+	color: #ffffff;
+}
+
+.full__name,
+.profession {
+	font-family: 'Montserrat', sans-serif;
+}
+.card__title {
+	font-family: 'Lora', serif;
+	font-size: 24px;
+	margin-top: 1rem;
+}
+.profession {
+	color: #828282;
+	font-size: 12px;
+	font-weight: 500;
+}
+.footer {
+	height: 10vh;
+	display: flex;
+	align-items: center;
+	justify-content:center;
+	color: #A9A9A9;
+}
+.footer__title {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+}
+
+@media only screen and (max-width: 600px) {
+	
 }
